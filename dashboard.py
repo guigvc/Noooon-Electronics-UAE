@@ -12,7 +12,7 @@ st.set_page_config(page_title="Noon UAE Bestsellers", layout="wide", page_icon="
 st.markdown('<div id="top_anchor"></div>', unsafe_allow_html=True)
 
 # ⚠️ DATA PATH (Ensure this is correct)
-DATA_FILE = r"E:\ZHX\Noon Intel\noon_data.parquet"
+DATA_FILE = "noon_data.parquet"
 
 # Initialize Session State
 if 'selected_category_state' not in st.session_state:
@@ -276,4 +276,5 @@ with col_b2:
             }
         </script>
         """
+
         components.html(js_top, height=0)
